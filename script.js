@@ -97,9 +97,9 @@ function dividiLunghezza(lung){
   for (const key in lung) {
 
     if ( lung[key].lunghezza > 15){
-      magg += lung[key].lunghezza;
+      magg += lung[key].peso;
     } else{
-      min += lung[key].lunghezza;
+      min += lung[key].peso;
     }
     
   }
@@ -107,3 +107,11 @@ function dividiLunghezza(lung){
   document.getElementById('minori15').innerHTML = min;
 
 }
+
+/*
+
+Jsnack 3
+Crea 10 oggetti che rappresentano una zucchina.
+Dividi in due array separati le zucchine che misurano meno o più di 15cm. Infine stampa separatamente quanto pesano i due gruppi di zucchine.
+
+*/
